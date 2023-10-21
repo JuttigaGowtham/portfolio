@@ -1,0 +1,141 @@
+:root {
+    --pars: #7c7c7c;
+    --violet: #1f0322;
+    --purple: #8a1c7c;
+    --accent: #da4167;
+    --pink: #f0bcd4;
+    --green: #899d78;
+}
+
+#skills .myCard {
+    height: 45vh;
+    text-align: start;
+}
+
+#skills img {
+    background-color: none;
+}
+#skills li {
+    color: var(--pars);
+}
+#skills .text {
+    color: var(--accent);
+}
+
+#me-div .myCard p {
+    color: var(--green);
+}
+
+
+/* Find Me Section */
+#find-me {
+    height: 60vh;
+    background-color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#find-me button {
+    height: 52px;
+    width: 192px;
+    background-color: #e67793;
+    border-radius: 0;
+    margin: 10px 0;
+    transition: 0.2s ease-in;
+}
+
+#find-me button:hover {
+    background-color: black;
+    color: white;
+}
+
+#find-me img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+#footer {
+    height: 20vh;
+    text-align: center;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+#footer p {
+     color: var(--pars);
+}
+#footer div {
+    padding: 20px 0;
+}
+#services span {
+    color: var(--accent);
+}
+
+@media (max-width:768px) {
+    #skills .myCard {
+        width: 60vw;
+    }
+    #skills .cards-group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px;
+
+    }
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+        padding: 0 50px;
+    }
+    #find-me button {
+        width: 100%;
+    }
+}
+@media (max-width:991px) {
+    #skills .myCard {
+        height: auto;
+    }
+    #find-me button {
+        margin: 20px 0;
+    }
+    #find-me {
+        height: auto;
+        padding: 50px 0;
+    }
+}
+@media (min-width: 992px) {
+    #skills {
+        height: 85vh;
+    }
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.myCard:nth-child(2) {
+    transition-delay: 100ms;
+}
+.myCard:nth-child(3) {
+    transition-delay: 200ms;
+}
+
+.col:nth-child(2) {
+    transition-delay: 100ms;
+}
+.col:nth-child(3) {
+    transition-delay: 200ms;
+}
+.col:nth-child(4) {
+    transition-delay: 300ms;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
